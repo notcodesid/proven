@@ -21,10 +21,6 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto flex w-full max-w-7xl">
           <div className="flex max-w-[780px] flex-col items-start text-left">
-            <span className="rounded-full border border-white/20 bg-black/20 px-4 py-1.5 text-xs font-semibold tracking-[0.08em] text-white/90 backdrop-blur-md">
-              Built on Solana
-            </span>
-
             <h1 className="mt-7 max-w-[780px] text-[clamp(3.25rem,7vw,6.5rem)] font-extrabold leading-[0.92] tracking-[-0.055em] text-white drop-shadow-[0_3px_24px_rgba(0,0,0,0.28)]">
               Get paid every day you show up.
             </h1>
