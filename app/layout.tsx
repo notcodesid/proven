@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "lockin",
+  title: "proven",
   description: "get committed to personal goals. stake money. stay accountable.",
 };
 
