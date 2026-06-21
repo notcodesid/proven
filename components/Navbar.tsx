@@ -6,11 +6,11 @@ import logo from "@/public/proven_logo.png";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-6 left-0 right-0 z-50 w-full px-8 flex justify-center">
+    <header className="fixed left-0 right-0 top-4 z-50 flex w-full justify-center px-4 sm:top-6 sm:px-8">
       <div className="w-full max-w-6xl flex items-center justify-between pointer-events-none">
         
         {/* Left Segment: Logo */}
-        <div className="pointer-events-auto bg-white rounded-[20px] p-3.5 flex items-center justify-center shadow-lg hover:scale-105 transition-transform duration-300">
+        <div className="pointer-events-auto flex items-center justify-center rounded-[18px] bg-white p-3 shadow-lg transition-transform duration-300 hover:scale-105 sm:rounded-[20px] sm:p-3.5">
           <Link href="/">
             <div className="relative w-8 h-8 flex items-center justify-center">
               <Image 
@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         {/* Center Segment: Navigation Links */}
-        <nav className="pointer-events-auto bg-white rounded-[20px] px-10 py-5 flex items-center gap-12 shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <nav className="pointer-events-auto hidden items-center gap-12 rounded-[20px] bg-white px-10 py-5 shadow-lg transition-shadow duration-300 hover:shadow-xl sm:flex">
           <Link 
             href="#inside" 
             className="text-[15px] font-semibold text-neutral-800 hover:text-[#ff5757] transition-colors duration-200"
@@ -42,7 +42,7 @@ export default function Navbar() {
         </nav>
 
         {/* Right Segment: App Store & Play Store Download Buttons */}
-        <div className="pointer-events-auto bg-white rounded-[20px] p-2 flex items-center gap-2 shadow-lg">
+        <div className="pointer-events-auto flex items-center gap-2 rounded-[18px] bg-white p-2 shadow-lg sm:rounded-[20px]">
           {/* App Store Button */}
           <Link 
             href="https://apps.apple.com" 
