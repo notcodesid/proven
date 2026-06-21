@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         {/* Center Segment: Navigation Links */}
-        <nav className="pointer-events-auto bg-white rounded-full px-10 py-5 flex items-center gap-12 shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <nav className="pointer-events-auto bg-white rounded-[20px] px-10 py-5 flex items-center gap-12 shadow-lg hover:shadow-xl transition-shadow duration-300">
           <Link 
             href="#inside" 
             className="text-[15px] font-semibold text-neutral-800 hover:text-[#ff5757] transition-colors duration-200"
@@ -42,12 +42,12 @@ export default function Navbar() {
         </nav>
 
         {/* Right Segment: App Store & Play Store Download Buttons */}
-        <div className="pointer-events-auto bg-white rounded-full p-2 flex items-center gap-2 shadow-lg">
+        <div className="pointer-events-auto bg-white rounded-[20px] p-2 flex items-center gap-2 shadow-lg">
           {/* App Store Button */}
           <Link 
             href="https://apps.apple.com" 
             target="_blank"
-            className="bg-black hover:bg-zinc-800 text-white rounded-[14px] w-11 h-11 flex items-center justify-center transition-colors duration-200"
+            className="bg-black hover:bg-zinc-800 text-white rounded-[12px] w-11 h-11 flex items-center justify-center transition-colors duration-200"
             aria-label="Download on the App Store"
           >
             <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
@@ -59,7 +59,7 @@ export default function Navbar() {
           <Link 
             href="https://play.google.com" 
             target="_blank"
-            className="bg-[#EBF0F3] hover:bg-zinc-200 text-black rounded-[14px] w-11 h-11 flex items-center justify-center transition-colors duration-200"
+            className="bg-[#EBF0F3] hover:bg-zinc-200 text-black rounded-[12px] w-11 h-11 flex items-center justify-center transition-colors duration-200"
             aria-label="Download on Google Play"
           >
             <svg viewBox="0 0 24 24" className="w-[18px] h-[18px]" fill="currentColor">
