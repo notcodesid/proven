@@ -130,3 +130,38 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes capabilities-marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes capabilities-marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.capabilities-marquee-left {
+  animation: capabilities-marquee-left 34s linear infinite;
+  will-change: transform;
+}
+
+.capabilities-marquee-right {
+  animation: capabilities-marquee-right 38s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .capabilities-marquee-left,
+  .capabilities-marquee-right {
+    animation-play-state: paused;
+  }
+}
